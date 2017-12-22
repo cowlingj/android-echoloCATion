@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">EcholoCATion</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_view_cats">ViewCatsActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="cat_image_description">cat image</string>
+    <string name="share">Share - Comming Soon!</string>
+    <string name="send">Send - Comming Soon!</string>
+    <string name="communicate">Communicate</string>
+    <string name="gallery">Gallery</string>
+    <string name="go_to">Go To</string>
+    <string name="author_github">https://github.com/cowlingj</string>
+    <string name="author_name">Jonathan Cowling</string>
+    <string name="no_cats_here_0">No Cats Here</string>
+    <string name="no_cats_here_1">:\'(</string>
+    <string name="meow_meow">Purrrrrfect!</string>
+    <string-array name="image_file_type">
+        <item>gif</item>
+        <item>giff</item>
+        <item>jpg</item>
+        <item>jpeg</item>
+        <item>tif</item>
+        <item>tiff</item>
+        <item>png</item>
+        <item>svg</item>
+    </string-array>
+</resources>
