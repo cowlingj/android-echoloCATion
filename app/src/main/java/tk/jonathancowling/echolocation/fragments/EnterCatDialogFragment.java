@@ -72,8 +72,7 @@ public class EnterCatDialogFragment extends DialogFragment implements AdapterVie
                                     .add(new ByteRequest(Request.Method.GET,
                                             url.toString(), new Response.Listener<Byte[]>() {
                                         @Override
-                                        public void onResponse(Byte[] response) {
-                                            final Byte[] res = response;
+                                        public void onResponse(final Byte[] response) {
                                             new Thread(new Runnable(){
                                                 @Override
                                                 public void run() {
@@ -82,11 +81,11 @@ public class EnterCatDialogFragment extends DialogFragment implements AdapterVie
                                                                     IOHelper.getPictureDir(context.getApplicationContext()),
                                                                     IOHelper.BASE_FILE_NAME,
                                                                     selectedItem),
-                                                            res);
+                                                            response);
                                                 }
                                             }).start();
 
-                                            Log.d(getTag(), "HTTP response = [data]");
+                                            Log.d(getTag(), "got HTTP response");
                                         }
                                     }, new Response.ErrorListener() {
                                         @Override
